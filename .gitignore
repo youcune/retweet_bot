@@ -1,0 +1,15 @@
+/.bundle
+/bundle
+
+/log
+
+# Config
+/config/*.yml
+!/config/*-example.yml
+
+# Rubymine
+/.idea
+
+# OS X
+.DS_Store
+

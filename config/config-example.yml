@@ -1,0 +1,12 @@
+twitter:
+  consumer_key: XXXXXXXXXXXXXXXXXXXXX
+  consumer_secret: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  access_token: XXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  access_token_secret: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+search_queries:
+  - なぜ俺は
+ng_words:
+  - '@'
+  - RT
+ng_clients:
+  - twittbot.net
