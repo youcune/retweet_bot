@@ -3,6 +3,8 @@ twitter:
   consumer_secret: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   access_token: XXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   access_token_secret: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+logger:
+  shift_age: weekly
 search_queries:
   - なぜ俺は
 ng_words:
@@ -10,3 +12,12 @@ ng_words:
   - RT
 ng_clients:
   - twittbot.net
+ng_users:
+  - Best_Teacher132
+  - bokete_kings
+  - gorousan3z
+  - meigenbot
+  - niyaniya__bot
+  - owarai4
+  - punpun_gazou
+  - WWWHUKKINWWW
