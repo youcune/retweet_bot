@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
 
 #require 'byebug'
-require 'Logger'
-require 'YAML'
-require 'Twitter'
+require 'logger'
+require 'yaml'
+require 'twitter'
 
-conf = YAML.load_file("config/#{ARGV[0]}.yml")
-logger = Logger.new("log/#{ARGV[0]}.log", conf['logger']['shift_age'])
+conf = YAML.load_file("#{File.dirname(__FILE__)}/config/#{ARGV[0]}.yml")
+logger = Logger.new("#{File.dirname(__FILE__)}/log/#{ARGV[0]}.log", conf['logger']['shift_age'])
 
 logger.info('Starting process')
 
