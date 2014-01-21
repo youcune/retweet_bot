@@ -1,3 +1,19 @@
+GIT
+  remote: git://github.com/sferik/twitter.git
+  revision: d77027f07c045a91210aa2e05c31f1d2fdeea503
+  specs:
+    twitter (5.5.1)
+      addressable (~> 2.3)
+      buftok (~> 0.2.0)
+      descendants_tracker (~> 0.0.3)
+      equalizer (~> 0.0.9)
+      faraday (~> 0.9.0)
+      http (~> 0.5.0)
+      http_parser.rb (~> 0.6.0)
+      json (~> 1.8)
+      memoizable (~> 0.4.0)
+      simple_oauth (~> 0.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -18,20 +34,9 @@ GEM
     simple_oauth (0.2.0)
     thread_safe (0.1.3)
       atomic
-    twitter (5.5.1)
-      addressable (~> 2.3)
-      buftok (~> 0.2.0)
-      descendants_tracker (~> 0.0.3)
-      equalizer (~> 0.0.9)
-      faraday (>= 0.8, < 0.10)
-      http (~> 0.5.0)
-      http_parser.rb (~> 0.6.0)
-      json (~> 1.8)
-      memoizable (~> 0.4.0)
-      simple_oauth (~> 0.2.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  twitter
+  twitter!

@@ -22,6 +22,7 @@ ng_words = conf['ng_words']
 ng_clients = conf['ng_clients']
 ng_users = conf['ng_users']
 succeed = false
+errors = []
 
 client.search(query, {count: 100})
   .select { |t| t.full_text.index(query) }
@@ -35,14 +36,17 @@ client.search(query, {count: 100})
       client.retweet(t)
       logger.info("Retweeted: #{t.url}")
     rescue Twitter::Error => e
-      logger.info("Failed: #{t.url} #{e}")
+      error = "Failed retweeting: #{t.url} #{e.to_s}"
+      errors << error
+      logger.info(error)
     else
       succeed = true
       break
     end
   end
 
-# if all retweet attempts failed, send an alert mail
+# if all retweet attempts failed, put errors to STDERR
 unless succeed
-  # TODO
+  STDERR.puts 'All attempts have failed!'
+  errors.each { |e| STDERR.puts e }
 end

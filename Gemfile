@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
 #gem 'byebug'
-gem 'twitter'
+gem 'twitter', github: 'sferik/twitter'
