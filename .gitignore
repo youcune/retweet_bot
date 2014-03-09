@@ -2,10 +2,7 @@
 /bundle
 
 /log
-
-# Config
-/config/*.yml
-!/config/*-example.yml
+/config
 
 # Rubymine
 /.idea
