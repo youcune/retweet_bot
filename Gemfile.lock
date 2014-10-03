@@ -1,42 +1,57 @@
 GIT
   remote: git://github.com/sferik/twitter.git
-  revision: d77027f07c045a91210aa2e05c31f1d2fdeea503
+  revision: e3aa3acb1c65a3d1bb14fd36acdd21a6f394d1d2
   specs:
-    twitter (5.5.1)
+    twitter (5.11.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
-      descendants_tracker (~> 0.0.3)
       equalizer (~> 0.0.9)
       faraday (~> 0.9.0)
-      http (~> 0.5.0)
+      http (~> 0.6.0)
       http_parser.rb (~> 0.6.0)
       json (~> 1.8)
       memoizable (~> 0.4.0)
+      naught (~> 1.0)
       simple_oauth (~> 0.2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.3.5)
-    atomic (1.1.14)
+    addressable (2.3.6)
     buftok (0.2.0)
-    descendants_tracker (0.0.3)
+    byebug (3.5.1)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
+      slop (~> 3.6)
+    coderay (1.1.0)
+    columnize (0.8.9)
+    debugger-linecache (1.2.0)
     equalizer (0.0.9)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
-    http (0.5.0)
-      http_parser.rb
+    http (0.6.2)
+      http_parser.rb (~> 0.6.0)
     http_parser.rb (0.6.0)
     json (1.8.1)
-    memoizable (0.4.0)
-      thread_safe (~> 0.1.3)
+    memoizable (0.4.2)
+      thread_safe (~> 0.3, >= 0.3.1)
+    method_source (0.8.2)
     multipart-post (2.0.0)
+    naught (1.0.0)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-byebug (2.0.0)
+      byebug (~> 3.4)
+      pry (~> 0.10)
     simple_oauth (0.2.0)
-    thread_safe (0.1.3)
-      atomic
+    slop (3.6.0)
+    thread_safe (0.3.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  pry-byebug
   twitter!

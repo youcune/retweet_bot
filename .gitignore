@@ -1,11 +1,11 @@
-/.bundle
-/bundle
+# Application
+/log/
+/config/*.yml
+!/config/*-example.yml
 
-/log
-/config
-
-# Rubymine
-/.idea
+# Bundler
+/.bundle/
+/vendor/bundle
 
 # OS X
 .DS_Store

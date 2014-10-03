@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-#require 'byebug'
+#require 'pry-byebug'
 require 'logger'
 require 'yaml'
 require 'twitter'
@@ -24,7 +24,7 @@ ng_users = conf['ng_users']
 succeed = false
 errors = []
 
-client.search(query, {count: 100})
+client.search(query).take(100)
   .select { |t| t.full_text.index(query) }
   .reject { |t| ng_words.any? { |w| t.full_text.index(w) } }
   .reject { |t| ng_clients.any? { |c| t.source.index(c) } }
