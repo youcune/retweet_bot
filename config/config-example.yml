@@ -50,3 +50,4 @@ ng_users:
   - twi_tenkomori
   - washozon
   - wwwwww_bot
+allow_urls: false

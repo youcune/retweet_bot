@@ -21,6 +21,7 @@ query = conf['search_queries'].sample
 ng_words = conf['ng_words']
 ng_clients = conf['ng_clients']
 ng_users = conf['ng_users']
+allow_urls = conf['allow_urls']
 succeed = false
 errors = []
 
@@ -29,6 +30,7 @@ client.search(query).take(100)
   .reject { |t| ng_words.any? { |w| t.full_text.index(w) } }
   .reject { |t| ng_clients.any? { |c| t.source.index(c) } }
   .reject { |t| ng_users.any? { |u| t.user.screen_name == u } }
+  .reject { |t| !allow_urls && t.urls? }
   .sample(3) # retry 3 times
   .each do |t|
     begin
